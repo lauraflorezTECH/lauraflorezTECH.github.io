@@ -2,3 +2,21 @@
 
 /* Education and TripleTen learning stages */
 .education-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.degree,.training{border-top:3px solid var(--gold)}.institution{font-weight:700;color:var(--navy)!important}.skill-line{font-size:.86rem;font-weight:700;color:#2567a3!important;margin-top:22px}.training h3{line-height:1.35}@media(max-width:800px){.education-grid{grid-template-columns:1fr}}
+
+
+/* Project 01 case study additions */
+.case-hero{padding:76px 0;background:linear-gradient(115deg,#dcecff,#f7fbff 55%,#e7f2ff);border-bottom:1px solid #d6e6f8}
+.case-hero h1{font-size:clamp(2.2rem,4.3vw,3.7rem);line-height:1.16;color:var(--navy);margin:12px 0}
+.case-back{color:var(--navy);font-weight:700;text-decoration:none}
+.case-copy{max-width:850px;font-size:1.12rem;color:var(--muted)}
+.case-kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:30px}
+.case-kpi span,.case-kpi small{display:block;color:var(--muted);font-size:.82rem}
+.case-kpi strong{display:block;color:var(--navy);font-size:clamp(1.2rem,2.1vw,1.7rem);margin:9px 0;overflow-wrap:anywhere}
+.case-findings{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.case-findings .card{min-width:0}
+.case-emphasis{font-size:1.8rem!important;font-weight:800;color:var(--navy)!important}
+.case-bar{background:#e4effa;border-radius:999px;height:18px;overflow:hidden;margin:25px 0}
+.case-bar span{display:block;background:linear-gradient(90deg,var(--gold),var(--blue));height:100%;border-radius:999px}
+.project-separator{color:#8ca4bc}
+@media(max-width:900px){.case-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.case-findings{grid-template-columns:1fr}}
+@media(max-width:540px){.case-kpis{grid-template-columns:1fr}.case-hero{padding:50px 0}.case-back{font-size:.84rem}}
