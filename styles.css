@@ -20,3 +20,15 @@
 .project-separator{color:#8ca4bc}
 @media(max-width:900px){.case-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.case-findings{grid-template-columns:1fr}}
 @media(max-width:540px){.case-kpis{grid-template-columns:1fr}.case-hero{padding:50px 0}.case-back{font-size:.84rem}}
+
+/* Case study layout refinements */
+.case-kpis{align-items:stretch}
+.case-kpi{display:flex;flex-direction:column;gap:8px;justify-content:center;min-width:0}
+.case-kpi span,.case-kpi small{line-height:1.45}
+.case-kpi strong{line-height:1.25;margin:4px 0;overflow-wrap:anywhere}
+.case-chart{background:white;border:1px solid #dce9f5;border-radius:16px;padding:28px;margin:24px 0;box-shadow:0 9px 22px #285e9410}
+.case-chart-row{display:grid;grid-template-columns:minmax(180px,1.3fr) minmax(90px,2fr) 75px;align-items:center;gap:16px;margin:18px 0;color:var(--navy)}
+.case-track{height:19px;background:#eaf4ff;border-radius:30px;overflow:hidden}
+.case-track i{display:block;height:100%;background:linear-gradient(90deg,#c39b58,#1877f2);border-radius:30px}
+.case-chart-row strong{text-align:right}
+@media(max-width:650px){.case-chart{padding:18px}.case-chart-row{grid-template-columns:1fr 70px;gap:7px}.case-chart-row span{grid-column:1/-1}.case-track{grid-column:1}.case-chart-row strong{grid-column:2}}
